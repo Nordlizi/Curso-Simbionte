@@ -1,0 +1,639 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * *   G L O B A L    T E X T   S E T T I N G S   * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+
+
+/* I M P O R T I N G  t h e  F O N T S */
+@font-face {
+    font-family: Champagne;
+    src: url(../fonts/Champagne.ttf);}
+@font-face {
+    font-family: HelveticaNoue;
+    src: url(../fonts/Helvetica_Neue.ttf);}
+@font-face {
+    font-family: HelveticaNoue37Thin;
+    src: url(../fonts/HelveticaNeueLTStd-ThCn.otf);}
+@font-face {
+    font-family: HelveticaNoue37ThinOblique;
+    src: url(../fonts/HelveticaNeueLTStd-ThCnO.otf);}
+
+/*escribir aquí la fuente utilizada para el logo de la empresa*/
+$logo-font: Champagne;
+
+
+
+
+
+
+/* E S T I L O   D E   T E X T O   N O R M A L */
+
+p {
+  font-family: HelveticaNoue;
+  font-size:14px;
+  color:$color-2;
+  text-align:justify;
+  white-space: pre-wrap;
+}
+h1 { /*usar para título único por página*/
+color:$color-3dark;
+font-family: HelveticaNoue37Thin;
+}
+h2 { /*usar para títulos de las dif. secciones de cada página*/
+color:$color-3dark;
+font-family: HelveticaNoue37Thin;
+}
+h3 { /*usar para títulos de cada bloque de párrafo*/
+color:$color-2light;
+font-family: HelveticaNoue37Thin;
+letter-spacing: 1px;
+}
+h4 { /*usar para párrafos cortos de alta relevancia*/
+color:$color-2;
+font-family: HelveticaNoue37Thin;
+letter-spacing: 1px;
+}
+h5 { /*usar para items o nombres puntuales que no son textos largos*/
+color:$color-2;
+font-family: HelveticaNoue;
+}
+h6 { /*usar para algún texto especial, de tamaño menor que los p*/
+color:$color-2;
+font-family: HelveticaNoue;
+}
+
+/*para que el cursor no se transforme en selector de texto*/
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: default;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* letter-spacing:1px; */
+}
+
+
+
+
+
+/* E S T I L I Z A N D O   C O M P O R T A M I E N T O S   D E   H I P E R V Í N C U L O S */
+
+/*para que el cursor se transforme en el dedito al pasar sobre links
+y para quitar el subrayado de los links*/
+a, a p, a h1, a h2, a h3, a h4, a h5, a h6 {
+  cursor: pointer; cursor: hand;
+  text-decoration: none;
+  outline:none;
+}
+a, a>p{
+  text-decoration:none;
+  outline:none;
+  color:$color-3;
+}
+a:hover, a:focus, a>p:hover, a>p:focus{
+    text-decoration:none;
+    outline:none;
+    color:$color-3light;
+}
+
+
+
+/* R E S P O N S I V E - @media settings */
+@media (min-width:450px) and (max-width:767px){
+  p{font-size:12px;}
+  h1{font-size:28px;}
+  h2{font-size:24px;}
+  h3{font-size:19px;}
+  h4{font-size:15px;}
+  h5{font-size:14px;}
+  h6{font-size:12px;}
+}
+@media (max-width:449px){
+  p{font-size:10px;}
+  h1{font-size:24px;}
+  h2{font-size:20px;}
+  h3{font-size:15px;}
+  h4{font-size:12px;}
+  h5{font-size:11px;}
+  h6{font-size:10px;}
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------*/
+/* * * * *    P E R S O N A L I Z A N D O   T E X T O S     * * * * */
+/* * * * *         D E   L A S   S E C C I O N E S         * * * * */
+/* * * * * * *  son generales, por eso no van en specifics_user * * * * * * */
+
+
+
+/* L I N K s  N A V B A R */
+ul.navbar-nav > li > a {
+  font-family: Champagne;
+  font-size: 13pt;
+  color: $color-3;
+  letter-spacing: 1px;
+}
+ul.navbar-nav > li > a :hover,
+ul.navbar-nav > li > a :focus{
+  color: $color-3superlight;
+}
+ul.navbar-nav > li > a.active{
+  color: $color-3light;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------*/
+/*--- * * * *  S E C T I O N S  t e x t  * * * * * ----*/
+/* ----------------------------------------------------*/
+
+/* T Í T U L O S   y  S U B T I T U L O S */
+// titulos dentro de una h1 y subtitulos tambien, pero sin clase .section-title
+.section-title{
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 3px;
+  color: $color-2;
+}
+h1.section-title{
+  text-transform: uppercase;
+}
+.section-subtitle{
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 2px;
+  color: $color-3;
+  margin-top: 0;
+}
+
+/* T E X T O   T I P O   H E A D E R  H3 Y H4 */
+// la clase  section-text se le pone a la col, y dentro de la col van los h3 y h4
+.section-text{
+  border-top: 1px solid $color-3;
+}
+.section-text h3,
+.section-text h4{
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 2px;
+  color: $color-2light;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.section-text h3:last-child,
+.section-text h4:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+// en h3 la firma y en h4 el degree (CEO de la empresa, etc.)
+.quote-firma{
+  text-align: right !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.quote-degree{
+  font-family: Champagne;
+  text-align: right !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  color: $color-3 !important;
+}
+
+
+/*---  T E X T  S P E C I F I C S ---*/
+/*---       de cada página       ---*/
+
+/*--- H O M E  text---*/
+#section1 .home-service-text{
+  padding-top: 20px;
+  border-top: 1px solid $color-3;
+}
+#section1 .home-service-text h3,
+#section1 .home-service-text h4{
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 2px;
+  color: $color-2light;
+  text-align: justify;
+}
+#section3 h1.section-subtitle{
+  color: $color-3dark;
+}
+
+/*--- N O S O T R O S  text---*/
+#nosotros  #mision-vision .section-text{
+  border-top: 1px solid $color-3light;
+}
+#nosotros  #valores .section-text h3,
+#nosotros  #valores .section-text h4,
+#nosotros  #filosofia-pilares .section-text h3,
+#nosotros  #filosofia-pilares .section-text h4{
+  color: $color-3;
+  text-align: left;
+}
+#nosotros  #valores .glyphicon{
+    color: $color-3dark;
+    padding-right: 20px;
+}
+#nosotros  #valores .section-title,
+#nosotros #filosofia-pilares .section-title{
+  color: $color-3light;
+}
+#nosotros  #valores .section-text{
+  border-top: 1px solid $color-3dark;
+  padding-top: 10px;
+}
+#nosotros #filosofia-intro .section-text.hidden-xs,
+#evento-individual #evento-individual-header .section-text.hidden-xs{
+  border-top: none;
+  border-left: 1px solid $color-3;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+#nosotros  #filosofia-intro .section-title.hidden-xs,
+#evento-individual  #evento-individual-header .section-title.hidden-xs{
+  padding-right: 20px;
+  text-align: right;
+}
+#nosotros  #filosofia-pilares .glyphicon{
+    color: $color-3dark;
+    padding-right: 20px;
+}
+#nosotros  #filosofia-pilares .section-text{
+  color: $color-3;
+  padding-top: 10px;
+}
+#nosotros  #filosofia-pilares .section-text h4,
+#nosotros  #filosofia-pilares .section-text h3{
+  color: $color-3;
+}
+#nosotros  #filosofia-pilares .section-text{
+  border-top: 1px solid $color-3dark;
+  padding-top: 10px;
+}
+
+// pág. Nosotros - sección Filosofia - transparent box
+#nosotros #filosofia-pilares .info-box{
+  padding: 0 40px;
+  background-color: rgba(0,0,0,0.3);
+}
+#nosotros #filosofia-pilares .info-box .section-text h4,
+#nosotros #filosofia-pilares .info-box .section-text h3{
+  margin: 0;
+  color: $color-3;
+}
+.ribbon-contenido {
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 3px;
+}
+
+// pág. Servicios - sección Listado
+#servicios #servicios-listado .section-title{
+  color: $color-3light;
+}
+#servicios #servicios-listado .section-subtitle{
+  color: $color-3dark;
+}
+#servicios #servicios-listado .section-text h3,
+#servicios #servicios-listado .section-text h4{
+  font-family: HelveticaNoue37Thin;
+  letter-spacing: 2px;
+  color: $color-2light;
+  text-align: left;
+  padding:0;
+}
+#servicios #servicios-listado .section-text{
+  border-top-color: $color-3superlight;
+}
+#servicios #servicios-listado .glyphicon{
+    color: $color-3dark;
+    padding-right: 20px;
+}
+#servicios #servicios-listado .special-col-fake h1{
+  color: $color-2;
+}
+
+// pág. Servicios - sección diferencial
+#servicios #servicios-diferencial .section-subtitle{
+  color: $color-3dark;
+  padding-bottom:8px;
+}
+#servicios #servicios-diferencial .section-text h3,
+#servicios #servicios-diferencial .section-text h4{
+  color: $color-2;
+  text-align: center;
+  padding:4px;
+}
+#servicios #servicios-diferencial .glyphicon{
+    color: $color-3dark;
+    padding-right: 20px;
+}
+#servicios #servicios-diferencial .section-text{
+  border-top-color: $color-3;
+  padding-top: 10px;
+}
+
+// pág. Marcas (clientes) - header
+#marcas #marcas-header .section-title{
+  text-align: right;
+}
+#marcas #marcas-header .section-subtitle{
+  color: $color-3dark;
+  text-align: right;
+  padding-bottom:8px;
+}
+#marcas #marcas-header .section-text h3,
+#marcas #marcas-header .section-text h4{
+  color: $color-2;
+  text-align: right;
+  padding:4px;
+}
+#marcas #marcas-header .glyphicon{
+    color: $color-3;
+    padding-right: 20px;
+}
+#marcas #marcas-header .section-text{
+  border-top-color: $color-3;
+  padding-top: 10px;
+  text-align: right;
+}
+@media (max-width:767px) {
+  #marcas #marcas-header .section-title,
+  #marcas #marcas-header .section-subtitle,
+  #marcas #marcas-header .section-text h3,
+  #marcas #marcas-header .section-text h4{
+    text-align: center;
+  }}
+
+// pág. Eventos - header
+#eventos  #eventos-header .section-text h3,
+#eventos  #eventos-header .section-text h4{
+  color: $color-3;
+  text-align: left;
+}
+#eventos  #eventos-header .glyphicon{
+    color: $color-3dark;
+    padding-right: 20px;
+}
+#eventos  #eventos-header .section-title{
+  color: $color-3hyperlight;
+}
+#eventos  #eventos-header .section-subtitle{
+  color: $color-3light;
+  padding-bottom: 20px;
+}
+#eventos  #eventos-header .section-text{
+  border-top: 1px solid $color-3dark;
+  padding-top: 0px;
+}
+
+// pág. Contacto - formulario
+#contacto  #contacto-formulario .section-subtitle{
+  color: $color-3dark;
+}
+#contacto .quote {
+  color: $color-3;
+}
+
+
+
+
+#contacto #contacto-datos .glyphicon,
+#contacto #contacto-datos .socicon{
+    color: $color-3light;
+    padding-right: 10px;
+}
+#contacto #contacto-datos h3,
+#contacto #contacto-datos h4{
+  color: $color-3;
+  padding-top: 10px;
+}
+#contacto #contacto-datos a:hover h3,
+#contacto #contacto-datos a:hover h4{
+  color: $color-3superlight;
+}
+#contacto #contacto-datos a:hover h3 .socicon,
+#contacto #contacto-datos a:hover h4 .socicon{
+  color: $color-3hyperlight;
+}
+#contacto #contacto-header h1.section-title{
+  color: $color-3hyperlight;
+}
+.contacto-mapa-texto-negrita{
+  font-family: HelveticaNoue;
+}
+#contacto #contacto-header .contacto-frase-header{
+  padding-top: 400px;
+}
+#contacto-datos{
+  padding-top: 300px;
+}
+@media (max-width: 991px){
+  #contacto-datos{
+  padding-top: 100px;
+}}
+
+
+
+
+
+
+
+
+
+
+
+/* T E X T  F O O T E R */
+/* color general */
+#footer p, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+  color: $color-3;
+}
+@media (max-width: 991px){
+  #footer p, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: HelveticaNoue37Thin;
+}}
+/* color de los títulos de las 3 columnas principales */
+.footer-title{
+}
+#footer .col-md-4 h5.footer-title {
+  color: $color-3light;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-bottom:10px;
+}
+/* color de los glyphicons */
+#footer .col-md-4 h5 span.socicon,
+#footer .col-md-4 h5 span.glyphicon {
+  color: $color-3dark;
+  padding-right: 4px;
+}
+#footer .col-md-4 a h5:hover span.socicon,
+#footer .col-md-4 a h5:hover span.glyphicon {
+  color: $color-3;
+}
+/* color de los renglones que tienen glyphicons */
+#footer .col-md-4 h5 {
+  color: $color-2light;
+}
+#footer .col-md-4 a h5:hover {
+  color: $color-3dark;
+}
+/* color de la información que está abajo */
+#footer .col-md-6 h4, #footer .col-md-6 h5 {
+  color: $color-2light;
+}
+#footer .col-md-6 h4 a, #footer .col-md-6 h5 a{
+  color: $color-3dark;
+}
+#footer .col-md-6 h4 a:hover, #footer .col-md-6 h5 a:hover{
+  color: $color-3;
+}
+@media (max-width: 991px){
+#footer .footer-responsive-vertical-space{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* ------------------------------------------------------------------*/
+/* * * * *   M I S   C L A S E S   P E R S O N A L I Z A D A S    * * * * */
+/* * * * * * *  categorías de texto que se repetirán * * * * * * */
+
+
+
+.quote {
+  font-family: HelveticaNoue37ThinOblique;
+  color:$color-3;
+  letter-spacing: 1px;
+  line-height:1.4em;
+  z-index:2;
+}
+.quote:before{
+  content:"“";
+  font-family:HelveticaNoue;
+  color:$color-1;
+  font-weight:600;
+  font-size:120%;
+}
+.quote:after{
+  content:"”";
+  font-family:HelveticaNoue;
+  color:$color-1;
+  font-weight:600;
+  font-size:120%;
+}
+.kerning{
+  letter-spacing: 8px;
+}
+
+/*  L O G O   F O N T  */
+/* para que cada vez que se nombre la empresa, aparezca con la font institucional */
+.logo-font{
+  font-family:$logo-font;}
+/* para agregar el espacio entre las dos palabras (global y target) */
+/* es para que el salto de línea o renglón no separe el nombre en dos */
+.logo-font-space{
+  padding-right: 1px;
+  font-weight: 600;}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------*/
+/* * * * *    V  I  S  U  A  L     E  F  F  E  C  T  S    * * * * */
+/* * * * * * *  algunos FX para meterle onda al texto  * * * * * * */
+
+
+
+/* * * * *   E F E C T O   D E   3D (texto con volúmen)   * * * * */
+.text-fx-3d{
+text-shadow: 0 1px 0 #ccc, 
+             0 2px 0 #c9c9c9,
+             0 3px 0 #bbb,
+             0 4px 0 #b9b9b9,
+             0 5px 0 #aaa,
+             0 6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25),
+             0 10px 10px rgba(0,0,0,.2),
+             0 20px 20px rgba(0,0,0,.15);
+}
+
+/* * * * *   E F E C T O   D E   P R O F U N D I D A D (hundido sobre el background)   * * * * */
+.text-fx-inset{
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.3) 0px 3px 3px, rgba(0,0,0,0.2) 0px -3px 2px;
+}
+
+/* * * * *   E F E C T O   D E   S O M B R A  (simple)   * * * * */
+.text-fx-shadow{
+  text-shadow: rgba(0,0,0,0.2) 0px 3px 2px;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------*/
+/* Q U É  E S   E S T O ?   N I   I D E A */
+textarea{ /* para qué era esto mauri??? */
+  word-break: break-all;
+}
+label{ /* para qué era esto mauri??? */
+	color:$color-black;
+}

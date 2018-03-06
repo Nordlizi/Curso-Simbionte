@@ -1,0 +1,954 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* 		E S T I L O   G E N E R A L 							                   *
+*			P A R A   A R M A R   L A   E S T R U C T U R A              *
+*					D E L   S I T I O  W E B                                 *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* R E S E T  B R O W S E R  S T Y L E: resetear los inherit styles del browser (si es que los tiene) */
+*{  margin:0;  padding:0;  border:0;}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* A L T U R A  D E  L A  N A V B A R  (escribir aquí la altura que queremos que tenga) */
+$navbar-altura:140px;
+$navbar-altura-xs:68px;
+
+/*---esto se cambia automáticamente acorde a la altura ingresada de la Navbar
+para que el contenido comience luego de la Navbar y no se pierda nada detrás de ella---*/
+  body{   	padding-top:$navbar-altura; background-color:$color-white;}
+  @media (max-width:767px) {body{    padding-top:$navbar-altura-xs; }}
+
+/* escribir aquí la altura de las columnas del footer, a criterio según la cantidad de info que tengan */
+$altura-footer-columns:200px;
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* B O D Y   W R A P P E R */
+
+.global-wrapper {
+  display:block;
+  overflow-x:hidden;
+  padding-top:$navbar-altura;
+  margin-top:-$navbar-altura;
+  background-color:$color-white;
+}
+@media (max-width:767px){.global-wrapper{
+  padding-top:$navbar-altura-xs;
+  margin-top:-$navbar-altura-xs;}}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* S E C C I O N E S  d e  C A D A  P Á G I N A */
+
+
+/* S E C T I O N S   # I D s */
+
+/*---escribir aquí las #id de las secciones para que el desplazamiento de los links hacia las secciones sean precisas---*/
+#section1,
+#section2,
+#section3,
+#section4{
+}
+
+#section0,
+#section1{
+overflow:hidden;}
+
+
+
+
+
+
+
+
+
+ /* S E C T I O N   W R A P P E R S */
+$padding-section-wrapper:40px; /*escribir aquí el padding (superior e inferior) de cada sección dentro de una pág*/
+
+/*---WRAPPER para envolver cada sección dentro de cada página; esta clase se le adjudica
+al container-fluid que adentro contiene los rows y las columns que agregan los márgenes laterales---*/
+.section-wrapper{ /*envolvente de cada sección de cada página*/
+  padding-top:$padding-section-wrapper;
+  padding-bottom:$padding-section-wrapper;
+}
+@media (min-width: 992px){
+.section-wrapper-footer{ /*envolvente sólo para el footer, con menor padding abajo*/
+  padding-top:$padding-section-wrapper;
+  padding-bottom:$padding-section-wrapper / 2;
+}}
+/*---para agregarle espaciado entre rows o items acorde a mi criterio (¡no aplicar a sections, porque ya tienen padding)---*/
+.space-top{
+  padding-top:$padding-section-wrapper;
+}
+.space-bottom{
+  padding-bottom:$padding-section-wrapper;
+}
+.super-space-top{
+  padding-top:$padding-section-wrapper * 2;
+}
+.super-space-bottom{
+  padding-bottom:$padding-section-wrapper * 2;
+}
+.half-space-bottom{
+  padding-bottom: $padding-section-wrapper * 0.5;
+}
+.half-space-top{
+  padding-top: $padding-section-wrapper * 0.5;
+}
+
+
+/*---particulares de estas secciones (porque el contenido tiene posición absoluta y es necesario esto)---*/
+#section0 > div{
+  border-bottom: 5px solid $color-3;
+}
+
+$section3-altura:800px;
+#section3 > .container-fluid{
+  min-height: $section3-altura;
+}
+
+#section4 > .container-fluid{
+  padding-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* I M A G E N   D E   P O R T A D A  de altura acorde al viewport */
+div.wrapper-portada{
+  height: 70vh;
+  width: 100%;
+  text-align: center;
+ @include flexbox;
+ @include align-items(center);
+ @include justify-content(row); 
+}
+
+div.wrapper-portada>img.portada{
+  max-height: 100%;
+  width: auto;
+  max-width: 200%;
+  text-align:center;
+  margin: 0 auto;
+}
+
+
+/* B A C K G R O U N D   I M A G E  size: cover */
+.bg-home-puzzle{
+  background-image: url('../../imagenes/Img/bg-home-puzzle.jpg');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-home-service {
+  background-color: white;
+  background-image: url("../../imagenes/Img/bg-home-servicios.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.bg-nosotros-valores{
+  background-image: url('../../imagenes/Img/bg-nosotros-valores.jpg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-3superlight;
+}
+.bg-nosotros-filosofia{
+  background-image: url('../../imagenes/Img/bg-nosotros-filosofia.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-servicios-listado{
+  background-image: url('../../imagenes/Img/bg-servicios-triada.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-servicios-diferencial{
+  background-image: url('../../imagenes/Img/bg-servicios-diferencial.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-marcas-header{
+  background-image: url('../../imagenes/Img/bg-marcas-header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-eventos-header{
+  background-image: url('../../imagenes/Img/bg-eventos-header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-2;
+}
+.bg-contacto-formulario{
+  background-image: url('../../imagenes/Img/bg-contacto-formulario.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;
+}
+.bg-contacto-header{
+  background-image: url('../../imagenes/Img/bg-contacto-header.jpg');
+  /*background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-white;*/
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-black;
+}
+.bg-home-header{
+  background-image: url('../../imagenes/Img/bg-home-header-newest.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-color: $color-black;
+  height: 90vh;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* backgrounds responsive changes */
+@media (max-width:767px) {
+  .bg-home-service {
+  background-image: none;
+  padding: 15px;}
+  .bg-nosotros-valores {
+    background-image: url('../../imagenes/Img/bg-nosotros-valores(responsive).jpg');}
+  .bg-home-puzzle{
+    background-image: url('../../imagenes/Img/bg-home-puzzle(responsive).jpg');}
+  .bg-nosotros-filosofia {
+    background-image: url('../../imagenes/Img/bg-nosotros-filosofia(responsive).jpg');}
+  .bg-servicios-listado {
+    background-image: url('../../imagenes/Img/bg-nosotros-filosofia(responsive).jpg');}
+  .bg-servicios-diferencial {
+    background-image: url('../../imagenes/Img/bg-servicios-diferencial(responsive).jpg');}
+  .bg-marcas-header {
+    background-image: url('../../imagenes/Img/bg-marcas-header(responsive).jpg');}
+  .bg-eventos-header {
+    background-image: url('../../imagenes/Img/bg-eventos-header(responsive).jpg');}
+  .bg-contacto-formulario {
+    background-image: url('../../imagenes/Img/bg-contacto-formulario(responsive).jpg');}
+  .bg-contacto-header {
+    background-image: url('../../imagenes/Img/bg-contacto-header(responsive).jpg');
+    background-position: center top;}
+  .bg-home-header {
+    background-image: url('../../imagenes/Img/bg-home-header-newest(responsive).jpg');
+    height: 50vh;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* P E R S O N I F I C A N D O   E L E M E N T O S */
+
+ /*---CENTRAR UNA COLUMNA dentro de un row---*/
+.col-hcenter{
+    text-align:center;
+    float: none;
+    margin: 0 auto;
+}
+/*---CENTRAR UNA COLUMNA VERTICALMENTE dentro de un row---*/
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/*--- DESTACADO --- | luego agregar diferentes clases de destacado, usando diferentes colores y diseños*/
+.destacado{
+  padding:5px 0 5px 30px;
+  border-left:4px solid $color-3;
+}
+
+/*---CENTRAR VERTICAL (Y HORIZONTALMENTE) EL CONTENIDO DENTRO DE UN DIV---*/
+.table-outer{ /* agregar esta class al contenedor, CREO que tiene que tener width y height específicos */
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-inner{ /* agregar esta class al contenido que quiero que esté centrado */
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.center-content-flex{
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center); 
+  width: 100%;
+  height: 100%;
+}
+.img-cover{
+    display: block;
+    object-fit: cover;
+  }
+
+
+/*---para ocultar/mostrar algún elemento a partir de un width xs que no llega a ser sm
+como por ejemplo un carousel de imágenes de header---*/
+.super-xs-shown{
+  display:block;
+}
+.super-xs-hidden{
+  display:none;
+}
+@media (min-width:345px) {
+  .super-xs-shown{
+    display:none;
+  }
+  .super-xs-hidden{
+    display:block;
+  }
+}
+
+
+
+
+
+
+/* para utilizar libremente al incluír cols dentro de un row que está dentro de otra col */
+.no-padding{
+  padding:0!important;
+}
+.no-margin{
+  margin:0!important;
+}
+.no-border{
+  border:none!important;
+}
+.no-vertical-border{
+  border-top:none!important;
+  border-bottom:none!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - -*/
+/* * *  S P E C I A L - C O L S  * * *  */
+/* - - - - - - - - - - - - - - - - - - -*/
+
+/* cols cuadradotas con fondo, minimal elegantes */
+
+/* escribir valor del padding, se ajustará responsive solo */
+$special-col-padding:20px 60px;
+/*escribir el valor que quiero que tengan las special col de altura*/
+$special-col-altura:400px;
+
+.hr-border-top-pegado{
+  border-top: 2px solid $color-3superlight;
+}
+.hr-border-bottom-pegado{
+  border-bottom: 2px solid $color-3superlight;
+}
+
+.special-col{
+  background-color: $color-white;
+  padding: $special-col-padding;
+  border: 1px solid $color-3superlight;
+  overflow:hidden;
+}
+#servicios .col-xs-12.special-col.no-padding{
+  overflow: visible; /*para que el decorative-divider no quede mitad oculto*/
+}
+.special-col:hover{
+  background-color: $color-grey0;
+}
+.special-col-fake{
+  background-color: $color-white;
+  padding: $special-col-padding;
+  border: 1px solid $color-3superlight;
+}
+.special-col h2 {
+  font-family: Champagne;
+  letter-spacing: 3px;
+  color: $color-3dark;
+  font-size: 25px;
+}
+.p-container {
+  max-height:120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.special-col p {
+  font-family: HelveticaNoue;
+  color: $color-2;
+}
+.special-col .ampliar {
+  color: $color-3dark;
+  font-family: HelveticaNoue37Thin;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+}
+.special-col .quote {
+  color:$color-3dark;
+}
+.special-col .quote:before{
+  color:$color-3light;
+}
+.special-col .quote:after{
+  color:$color-3light;
+}
+.special-col .ampliar:hover {
+  color: $color-3;
+}
+.special-col .ampliar span.glyphicon{
+  color: $color-3light;
+}
+
+
+
+/* special-cols de eventos */
+#eventos .special-col .col-sm-6,
+#home #section4 .special-col .col-sm-6,{
+  height: $special-col-altura;
+  padding: $special-col-padding;
+  overflow: hidden;
+}
+/* special-cols de servicios */
+#servicios .special-col .col-sm-6{
+  height: $special-col-altura * 1.33;
+  padding: 20px 140px;
+  overflow: hidden;
+}
+/* special-cols de eventos individuales */
+#evento-individual .special-col .col-sm-6{
+  height: $special-col-altura;
+  padding: 20px 140px;
+  overflow: hidden;
+}
+/* special-cols de eventos individuales */
+#marca-individual .special-col .col-sm-6{
+  height: $special-col-altura;
+  padding: 20px 140px;
+  overflow: hidden;
+}
+/* special-cols de contacto */
+#contacto .special-col .col-sm-6{
+  height: $special-col-altura * 1.33;
+  padding: 20px 140px;
+  overflow: hidden;
+}
+#contacto .special-col .col-sm-12{
+  padding: 20px 140px;
+}
+#contacto .special-col .col-sm-6 h1,
+#contacto .special-col .col-sm-12 h1 {
+  font-size: 30px;
+}
+#contacto .special-col .col-sm-6 p,
+#contacto .special-col .col-sm-12 p{
+  text-align: center;
+}
+#contacto .special-col #contacto-form .col-sm-12,
+#contacto .special-col #contacto-form .col-sm-6{
+  height: auto;
+  padding: 20px;
+}
+
+.special-col.special-col-img{
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+/* img de todas las special-cols */
+#evento-individual .special-col.special-col-img img.horizontal.img-main,
+#marca-individual .special-col.special-col-img img.horizontal.img-main,
+#eventos .special-col img.horizontal.img-main,
+#home #section4 .special-col img.horizontal.img-main,
+#servicios .special-col img.horizontal.img-main{
+  min-height:100%;
+  height:auto;
+  width:60vw;
+  object-fit: cover;
+}
+#evento-individual .special-col.special-col-img img:not(.horizontal).img-main,
+#marca-individual .special-col.special-col-img img:not(.horizontal).img-main,
+#eventos .special-col img:not(.horizontal).img-main,
+#home #section4 .special-col img:not(.horizontal).img-main,
+#servicios .special-col img:not(.horizontal).img-main{
+  height:auto;
+  width:60vw; /* si anda mal, testear con 100% */
+}
+
+/* para que los greyscale-hover tomen color cuando se pasa por arriba de la special-col que es parent */
+#eventos .special-col:hover .img-greyscale-hover,
+#home .special-col:hover .img-greyscale-hover,
+#marca-individual .special-col:hover .img-greyscale-hover,
+#servicios .special-col:hover .img-greyscale-hover{
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/* para que se agranden un poquito on-hover */
+#eventos .special-col img.img-main,
+#home #section4 .special-col img.img-main,
+#marcas .special-col img.img-main,
+#marca-individual .special-col img.img-main,
+#servicios .special-col img.img-main {
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+#eventos .special-col:hover img.img-main,
+#home #section4 .special-col:hover img.img-main,
+#marcas .special-col:hover img.img-main,
+#marca-individual .special-col:hover img.img-main,
+#servicios .special-col:hover img.img-main {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* ARREGLO DE MARCAS, DE LOS CUADRADITOS QUE DESAPARECÍAN porque se exportaban con 301px a veces */
+#marcas .special-col img.img-main{
+  height: 300px;
+  width: 300px;
+}
+
+
+/* altura de las special-cols responsive */
+@media (max-width:767px) {
+  #eventos .special-col .col-sm-6,
+  #home #section4 .special-col.col-sm-6,
+  #servicios .special-col .col-sm-6,
+  #contacto .special-col .col-sm-6,
+  #evento-individual .special-col .col-sm-6,
+  #marca-individual .special-col .col-sm-6{
+    /*height: $special-col-altura / 2; */
+  }
+  .special-col img{
+    width:100% !important;
+    height:auto !important;
+    min-height:none !important;
+  }
+}
+/* padding de las special-cols responsive */
+@media (max-width:991px) {
+  #eventos .special-col .col-sm-6,
+  #home #section4 .special-col.col-sm-6,
+  #servicios .special-col .col-sm-6,
+  #evento-individual .special-col .col-sm-6,
+  #marca-individual .special-col .col-sm-6,
+  #contacto .special-col .col-sm-6,
+  #contacto .special-col .col-sm-12,{
+    padding: $special-col-padding;
+  }}
+
+
+/* logos que aparecen alineados (los asociados a cada evento por ejemplo) */
+.inline-logos{
+  width: 100%;  
+  @include flex;
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  @include align-items(center);
+}
+#marca-individual .inline-logos img{
+  width: 200px;
+  height: auto;
+  margin-left:10px;
+  margin-right:10px;
+}
+#evento-individual .inline-logos img{
+  width: 160px;
+  height: auto;
+  margin-left:10px;
+  margin-right:10px;
+}
+#home #section4 .inline-logos.chiqui-logos img, // home eventos
+#eventos-listado .inline-logos.chiqui-logos img, // eventos
+#marca-individual .inline-logos.chiqui-logos img,{ // eventos de una marca
+  width: auto;
+  height: 160px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top: 0;
+  margin-bottom: -20px;
+}
+#home #section4 .inline-logos.chiqui-logos,
+#eventos-listado .inline-logos.chiqui-logos,
+#marca-individual .inline-logos.chiqui-logos{
+  padding: 0;
+  margin: 0;
+}
+@media (max-width:559px) {
+  #home #section4 .inline-logos.chiqui-logos img,
+  #eventos-listado .inline-logos.chiqui-logos img,
+  #marca-individual .inline-logos.chiqui-logos img{
+    height: auto !important;
+    width: 40vw !important;
+}}
+@media (min-width:560px)and(max-width:767px) {
+  #home #section4 .inline-logos.chiqui-logos img,
+  #eventos-listado .inline-logos.chiqui-logos img,
+  #marca-individual .inline-logos.chiqui-logos img {
+    height: auto !important;
+    width: 25vw !important;
+}}
+
+// Servicios - Intro (botones special-col)
+#servicios #servicios-intro .special-col a h4{
+  text-align: center;
+  color: $color-3dark;
+  letter-spacing: 4px;
+  line-height: 2;
+}
+#servicios #servicios-intro .special-col{
+  padding:0;
+}
+#servicios #servicios-listado .special-col-fake{
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+#servicios #servicios-listado.row:hover .special-col-fake{
+  background-color: $color-grey0;
+}
+#servicios #servicios-listado.row:hover{
+  background-color: $color-grey0;
+}
+@media (min-width:768px) {
+  #servicios #servicios-listado .col-sm-6{
+    height: 1384px;}}
+
+// Contacto - datos
+#contacto #contacto-datos .special-col-fake{
+  height: 400px;
+}
+#contacto #contacto-datos .special-col-fake:hover{
+  background-color: $color-grey0;
+}
+@media (min-width:768px) {
+  #contacto #contacto-datos .special-col-fake{
+    height: 500px;}}
+
+// Evento individual
+#evento-individual .special-col-fake{
+  background-color: $color-white;
+}
+#evento-individual .special-col-fake:hover{
+  background-color: $color-grey0;
+}
+
+
+
+
+// cursor behaviour
+a .special-col {
+  cursor: pointer; cursor: hand;
+}
+a .special-col-fake {
+  cursor: pointer; cursor: hand;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+/* * *      B U S C A D O R  (input)     * * *  */
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+.buscador{
+  padding: 0;
+  margin: 0;
+}
+#eventos .buscador-predescription{
+  color: $color-3;
+  text-align: left;
+}
+#marcas .buscador-predescription{
+  color: $color-2;
+  text-align: right;
+}
+.buscador .buscador-boton{
+  background-color: $color-2semilight;
+  color: $color-3;
+  height: 42px;
+}
+.buscador .buscador-boton h4 .glyphicon{
+  padding: 0 10px;
+  margin-right: -8px;
+  color: $color-3dark;
+}
+.buscador .buscador-selector{
+  background-color: $color-2semilight;
+  -webkit-box-shadow: inset 3px 3px 6px rgba(0,0,0,0.3); 
+  border-radius: 0px;
+  border: none;
+  min-height: 42px;
+}
+#eventos #eventos-buscador.buscador,
+#eventos #eventos-buscador.buscador .buscador-boton,
+#eventos #eventos-buscador.buscador .buscador-selector{
+  float: left;
+}
+#marcas #marcas-buscador.buscador,
+#marcas #marcas-buscador.buscador .buscador-boton,
+#marcas #marcas-buscador.buscador .buscador-selector{
+  float: right;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+/* * *      I M G  S E L E C C I O N D A  ( F I L T R O )    * * *  */
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+.img-seleccionada-filtro-eventos{
+  background-color:  $color-2; 
+  width: 261px;
+  height: auto;
+  border:solid 1px $color-2semilight;
+  padding:10px;
+  position: relative;
+}
+
+.contenedor-img-seleccionada-filtro-eventos{
+  position: relative;
+}
+  .img-seleccionada-filtro-eventos-remove{
+    position:absolute;
+    top:6px;
+    right: 2px;
+    color: $color-grey1;
+  }
+    .img-seleccionada-filtro-eventos-remove a h4 span{
+      color: $color-2semilight !important;
+    }
+    .img-seleccionada-filtro-eventos-remove a:hover h4 span{
+      color: $color-2light !important;
+    }
+
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+/* * * T H U M B N A I L   G A L L E R Y * * *  */
+/* - - - - - - - - - - - - - - - - - - - - - - -*/
+.thumbnail-gallery-parent{
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+
+.thumbnail-gallery-child{
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: .5vw; 
+}
+.thumbnail-gallery-child img {
+  width: 100%; 
+  height: auto; 
+}
+
+@media screen and (max-width: 400px) {
+  .thumbnail-gallery-parent { padding: 10; }
+  .thumbnail-gallery-child { margin: 4; }
+  
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* P R E L O A D I N G   O N - H O V E R   I M A G E S  to speed up the effect */
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1000;
+    content:url('../../imagenes/Img/bg-home-header-new.jpg')
+            url('../../imagenes/Empresa/isologo_golden_bright_big.png');
+}

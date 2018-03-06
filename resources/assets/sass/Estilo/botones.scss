@@ -1,0 +1,157 @@
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* * * * * * * - - - - - - -                           B O T O N E S                                - - - - - - -  * * * * * * * */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/*  B O T Ó N   A M P L I A R
+(para todos esos links de "ver más") con triángulo */
+.ampliar {
+  color: $color-3dark;
+  padding-left: 0px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.ampliar span.glyphicon{
+  color: $color-1;
+  -webkit-animation-name: mibounceleft;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-play-state: paused;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+  animation-name: mibounceleft;
+  animation-duration: 0.5s;
+  animation-play-state: paused;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+}
+.ampliar:hover {
+  color: $color-1;
+  padding-left: 5px;
+}
+.ampliar:hover span.glyphicon{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes mibounceleft {
+  0% {-webkit-transform:translate(0, 0);}
+  50% {-webkit-transform:translate(-8px, 0);-webkit-animation-timing-function:ease-out;}
+  100% {-webkit-transform:translate(0, 0);-webkit-animation-timing-function:ease-in;}
+}
+@keyframes mibounceleft {
+  0% {transform:translate(0, 0);}
+  50% {transform:translate(-6px, 0);animation-timing-function:ease-out;}
+  100% {transform:translate(0, 0);animation-timing-function:ease-in;}
+}
+
+
+
+
+
+
+
+/*--- B O T Ó N   P R I M A R I O  |  COLOR-3 ---*/
+.btn-primary {
+  color: $color-white;
+  background-color: $color-3;
+  border-color: $color-3;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: $color-white;
+  background-color: $color-3light;
+  border-color: $color-3light;
+  outline-width: 1px;
+  outline-offset: 4px;
+  outline-style: dotted;
+}
+.btn-primary:hover {
+  color: $color-white;
+  background-color: $color-3light;
+  border-color: $color-3light;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: $color-white;
+  background-color: $color-3dark;
+  border-color: $color-3;
+  outline:none;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: $color-white;
+  background-color: $color-3dark;
+  border-color: $color-3;
+  outline:none;
+}
+
+
+
+
+
+
+/*--- B O T Ó N  d e  F O R M U L A R I O  p a r a  A D J U N T A R  A R C H I V O ---*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+
+
+/*---  B O T Ó N E S  d e   M A U R I  ---*/
+@mixin Boton-Normal($bk: $Color-Azul-Wm, $color:white )
+{
+  background-color: $bk;
+  color:$color ;
+  padding: 10px 14px;
+  font-size: 20px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  margin: 15px auto;
+  display: table;
+  cursor:pointer;
+}
+
+
+@mixin Boton-Chico($bk: $Color-Azul-Wm, $color:white )
+{
+  background-color: $bk;
+  color:$color ;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: arial;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  margin: 15px auto;
+  display: table;
+  cursor:pointer;  
+}
