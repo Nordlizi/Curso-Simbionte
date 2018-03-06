@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\Publicas;
 
 use App\Http\Controllers\Controller;
