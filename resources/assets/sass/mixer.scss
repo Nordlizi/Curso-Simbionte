@@ -36,8 +36,7 @@
 @import "resources/assets/sass/Plugins/Plug-bootstrap-fileinput";
 @import "resources/assets/sass/Plugins/Plug-carousel";
 @import "resources/assets/sass/Plugins/Plug-Bootstrap-select";
-//Auth
-@import "resources/assets/sass/Estilo/Auth/Auth_General";
+
 
 
 //Errores
@@ -60,9 +59,18 @@
 @import "resources/assets/sass/Estilo/colors";
 @import "resources/assets/sass/Estilo/estructura";
 @import "resources/assets/sass/Estilo/botones";
-@import "resources/assets/sass/Estilo/mis_recursos";
-@import "resources/assets/sass/Estilo/navbar_user";
-@import "resources/assets/sass/Estilo/specifics_admin";
-@import "resources/assets/sass/Estilo/specifics_user";
 @import "resources/assets/sass/Estilo/text";
-@import "resources/assets/sass/Plugins/ekko-lightbox";
+
+
+//creative_template
+@import "resources/assets/sass/template_Creative/_variables";
+@import "resources/assets/sass/template_Creative/_mixins";
+@import "resources/assets/sass/template_Creative/_bootstrap-overrides";
+@import "resources/assets/sass/template_Creative/_global";
+@import "resources/assets/sass/template_Creative/_masthead";
+
+@import "resources/assets/sass/template_Creative/_navbar";
+@import "resources/assets/sass/template_Creative/_portfolio";
+@import "resources/assets/sass/template_Creative/_services";
+
+@import "resources/assets/sass/template_Creative/magnific-popup";

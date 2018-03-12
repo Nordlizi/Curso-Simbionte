@@ -36,6 +36,11 @@ elixir(function(mix) {
         'Plug-slick.min.js',
         'Plug-image-dropdown.js',
         'ekko-lightbox.js',
+        'Template_creative/creative.js',
+        'Template_creative/jquery.easing.compatibility.js',
+        'Template_creative/jquery.easing.js',
+        'Template_creative/jquery.magnific-popup.js',
+        'Template_creative/scrollreveal.js',
         'inicio.js',
         'mis-animations.js',
         'mis-funciones_personalizadas.js',
@@ -57,6 +62,11 @@ elixir(function(mix) {
         'mis-textareas.js',
         'mis-file_input.js',
         'fin.js']);
+
+
+    elixir(function(mix) {
+            mix.version(['css/app.css', 'js/all.js']);
+        });
 
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
 });
