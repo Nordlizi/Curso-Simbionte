@@ -63,6 +63,11 @@
 
 
 //creative_template
+@import "resources/assets/sass/template_Creative/bootstrap";
+@import "resources/assets/sass/template_Creative/bootstrap-grid";
+@import "resources/assets/sass/template_Creative/bootstrap-reboot";
+
+
 @import "resources/assets/sass/template_Creative/_variables";
 @import "resources/assets/sass/template_Creative/_mixins";
 @import "resources/assets/sass/template_Creative/_global";
