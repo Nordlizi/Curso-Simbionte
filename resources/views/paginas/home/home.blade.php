@@ -261,7 +261,7 @@
 
 
     <!-- Scripts -->
-    <script src="{{url()}}/{{ elixir('js/all.js')}} " ></script>  
+    <script src="{{url()}}{{ elixir('js/all.js')}} " ></script>  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
