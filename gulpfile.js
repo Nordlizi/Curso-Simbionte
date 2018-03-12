@@ -16,7 +16,7 @@ elixir(function(mix) {
        .version(['css/app.css']); 
 
     mix.scripts([
-        'Plug-jquery-1.11.3.min.js',        
+        /*'Plug-jquery-1.11.3.min.js',        
         'Plug-bootstrap-notify.min.js',        
         'Plug-bootstrap.min.js',
         'Plug-smooth_scroll.js',
@@ -35,7 +35,9 @@ elixir(function(mix) {
         'Plug-bootstrap-fileinput v4.3.7.js',
         'Plug-slick.min.js',
         'Plug-image-dropdown.js',
-        'ekko-lightbox.js',
+        'ekko-lightbox.js',*/
+        'Template_creative/jquery.jquery.js',
+        'Template_creative/jquery.bootstrap.bundle.js',
         
         'Template_creative/jquery.easing.compatibility.js',
         'Template_creative/jquery.easing.js',        
@@ -43,7 +45,7 @@ elixir(function(mix) {
         'Template_creative/jquery.magnific-popup.js',
         'Template_creative/creative.js',
         'inicio.js',
-        'mis-animations.js',
+        /*'mis-animations.js',
         'mis-funciones_personalizadas.js',
         'mis-funciones_personalizadas_para_GoogleAnalitics.js',        
         'mis-muestra_barra_de_carga.js',
@@ -61,7 +63,7 @@ elixir(function(mix) {
         'mis-flechitas-autopocicionadas.js',
         'mis-botones_para_adjuntar.js',
         'mis-textareas.js',
-        'mis-file_input.js',
+        'mis-file_input.js',*/
         'fin.js']);
 
 
