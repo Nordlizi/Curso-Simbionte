@@ -36,10 +36,8 @@ elixir(function(mix) {
         'Plug-slick.min.js',
         'Plug-image-dropdown.js',
         'ekko-lightbox.js',*/
-        'Template_creative/jquery.jquery.js',
-        'Template_creative/jquery.bootstrap.bundle.js',
-        
-       
+        'Template_creative/jquery.js',
+        'Template_creative/bootstrap.bundle.js',
         'Template_creative/jquery.easing.js',        
         'Template_creative/scrollreveal.js',
         'Template_creative/jquery.magnific-popup.js',
