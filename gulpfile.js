@@ -16,8 +16,8 @@ elixir(function(mix) {
        .version(['css/app.css']); 
 
     mix.scripts([
-        /*'Plug-jquery-1.11.3.min.js',        
-        'Plug-bootstrap-notify.min.js',        
+        'Plug-jquery-1.11.3.min.js',        
+       /* 'Plug-bootstrap-notify.min.js',        
         'Plug-bootstrap.min.js',
         'Plug-smooth_scroll.js',
         'Plug-wow.js',
