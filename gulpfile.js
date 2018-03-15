@@ -39,11 +39,12 @@ elixir(function(mix) {
         'Template_creative/jquery.jquery.js',
         'Template_creative/jquery.bootstrap.bundle.js',
         
-        'Template_creative/jquery.easing.compatibility.js',
+       
         'Template_creative/jquery.easing.js',        
         'Template_creative/scrollreveal.js',
         'Template_creative/jquery.magnific-popup.js',
         'Template_creative/creative.js',
+         'Template_creative/jquery.easing.compatibility.js',
         'inicio.js',
         /*'mis-animations.js',
         'mis-funciones_personalizadas.js',
