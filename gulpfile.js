@@ -68,7 +68,7 @@ elixir(function(mix) {
 
 
     elixir(function(mix) {
-            mix.version(['css/app.css', 'js/all.js']);
+            mix.version(['css/mixer.css', 'js/all.js']);
 
             mix.sass('creative_template_mixer.scss','public/css')
                .version(['css/creative_template.css']); 
