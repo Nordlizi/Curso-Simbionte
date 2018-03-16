@@ -14,7 +14,9 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     
 
-    mix.sass('mixer.scss','public/css'); 
+     mix.sass('mixer.scss','public/css'); 
+
+     mix.sass('creative_template_mixer.scss','public/css');
 
     mix.scripts([
         'Plug-jquery-1.11.3.min.js',        
@@ -68,11 +70,8 @@ elixir(function(mix) {
 
 
     elixir(function(mix) {
-            mix.version(['css/mixer.css', 'js/all.js']);
-
-            mix.sass('creative_template_mixer.scss','public/css')
-               .version(['css/creative_template.css']); 
-        });
+            mix.version(['css/mixer.css', 'css/creative_template.css', 'js/all.js']); 
+    });
 
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
 });
