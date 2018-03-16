@@ -26,7 +26,7 @@
     <title>{{$Empresa->name}} - @yield('title')</title>
     <meta name="Description" CONTENT="@yield('MetaContent')">
 
-    <link rel="stylesheet" type="text/css" href="{{url()}}{{ elixir('css/app.css') }}">   
+    <link rel="stylesheet" type="text/css" href="{{url()}}{{ elixir('css/mixer.css') }}">   
     <link rel="stylesheet" type="text/css" href=" {{ asset('Iconos/fonts/style.css')}}">
     <META name="robots" content="@yield('MetaRobot')">
 
