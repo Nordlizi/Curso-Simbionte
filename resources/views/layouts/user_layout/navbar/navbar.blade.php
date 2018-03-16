@@ -19,11 +19,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav">
           <li><a href="{{route('get_home')}}">HOME</a></li>
-          <li><a href="{{route('get_pagina_empresa')}}">NOSOTROS</a></li>
-          <li><a href="{{route('get_pagina_servicios')}}">SERVICIOS</a></li>
-          <li><a href="{{route('get_pagina_marcas')}}">CLIENTES</a></li>
-          <li><a href="{{route('get_pagina_eventos')}}">GALERÍA</a></li>
-          <li><a href="{{route('get_pagina_contacto')}}">CONTACTO</a></li>
+          <li><a href="">NOSOTROS</a></li>
+          <li><a href="">SERVICIOS</a></li>
+          <li><a href="">CLIENTES</a></li>
+          <li><a href="">GALERÍA</a></li>
+          <li><a href="">CONTACTO</a></li>
 
 
           {{-- contenidos ocultos para mostrar con tooltips --}}
