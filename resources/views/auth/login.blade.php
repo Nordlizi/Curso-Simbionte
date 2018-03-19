@@ -14,7 +14,7 @@
 @stop
 
 @section('Boton')
- INDEX,FOLLOW
+ Entrar
 @stop
 
 

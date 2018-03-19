@@ -24,6 +24,7 @@
                             ])               !!}
             
              @yield('content')
+             
              <input type="submit" class="boton-inicio_sesion" value="@yield('Boton')" >           
 
           {!! Form::close() !!}
