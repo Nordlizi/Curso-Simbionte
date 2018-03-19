@@ -13,41 +13,24 @@
     <META name="robots" content="@yield('MetaRobot')">
   </head>
 
-  <body > 
+  <body> 
            <div class="contenedor-general-auth">
-             <div class="contenedor-Auth">
-
-      
-          
-
-         
+            <div class="contenedor-Auth">
             {!! Form::open( ['route'   => $Route,
                             'method'   => 'Post',
                             'files'    => true,
                             'class'    => 'Form-Auth',
                             'id'       => 'Form-LogIn'
                             ])               !!}
-         
-          
-
-          
-
             
              @yield('content')
-            
-
-            
-             
-             
-
-             <input type="submit" class="boton-inicio_sesion" value="@yield('Boton')" >
-             </div> 
+             <input type="submit" class="boton-inicio_sesion" value="@yield('Boton')" >           
 
           {!! Form::close() !!}
-  </div>
+          </div>
      
                  
-           </div>
+          </div>
   <!-- Scripts -->
   <script src="{{ asset('js/all.js')}}"></script> 
   </body>
