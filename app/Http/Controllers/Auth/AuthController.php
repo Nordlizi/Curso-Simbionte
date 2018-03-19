@@ -107,7 +107,7 @@ class AuthController extends Controller
             return view('auth.authenticate');
         }
 
-        $Route = route('auth_login_post');
+        $Route = 'auth_login_post';
 
         return view('auth.login', compact('Route'));
     }
