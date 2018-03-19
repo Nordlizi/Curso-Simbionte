@@ -24,8 +24,7 @@
 
 
  
- <div class="Auth-Field-Contenedor">
-                  
+             <div class="Auth-Field-Contenedor">
                   {!! Form::text('email', null ,
                     ['class'              => 'Auth-Field-Contenedor-Label-Input',
                      'required'           => 'required',
@@ -39,6 +38,7 @@
               {!! Form::password('password', [ 'class'              => 'Auth-Field-Contenedor-Label-Input',
                      'required'           => 'required',                     
                      'placeholder'        => 'password']) !!}
+              </div>
      
 
 @stop
