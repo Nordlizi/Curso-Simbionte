@@ -7,7 +7,7 @@ Route::get('iniciar', [
 ]);
 
 //Login post
-Route::post('iniciar', [
+Route::post('auth_login_post', [
 
    'uses' => 'Auth\AuthController@postLogin',
    'as'   => 'auth_login_post'
