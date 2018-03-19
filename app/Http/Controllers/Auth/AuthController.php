@@ -101,6 +101,17 @@ class AuthController extends Controller
         return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
 
+    public function getLogin()
+    {
+        if (view()->exists('auth.authenticate')) {
+            return view('auth.authenticate');
+        }
+
+        $Route = route('auth_login_post');
+
+        return view('auth.login', compact('Route'));
+    }
+
     
 
 

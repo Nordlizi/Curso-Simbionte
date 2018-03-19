@@ -35,6 +35,11 @@ $color-grey2:#858585; /*gris medio (para títulos por ejemplo)*/
 $color-grey3:#3b3b3b; /*gris más oscuro (para backgrounds por ejemplo)*/
 $color-grey3:#2a2a2a; /*gris más oscuro (para backgrounds por ejemplo)*/
 
+$Color-Gris-Claro: #EFEEEE;
+$Color-Gris-CasiBlanco:#FDF9F9;
+$Color-Claro-Categoria-ML: #F7F7F7;
+$Color-texto-gris-Mercadolibre: #999999;
+
 $color-white:white; /*usamos esto en lugar de "white" por si decidimos cambiarlo todos los blancos más adelante*/
 $color-black:black; /*misma razón, pero para el negro */
 
@@ -164,11 +169,17 @@ $institucional4:#f1f1f1;
 $institucional5:#2045FF;
 
 
+
 $Color-Azul-Wm: #385dae;
+
+$Color-Azul-Wm_Hover:#247AC1 ;
+
+
+$Color-Azul-Wm-Claro:#7895d3;
 
 $Color-AmarilloPatitp: #F6FCC7 ;
 
-$Color-AmarilloPatitp-Claro: #FFFDE4;
+$Color-AmarilloPatitp-Claro: #FFFDE4; 
 
 $Color-AmarilloLogo: #F7E903;
 
@@ -188,13 +199,15 @@ $Color-Verde-Super-Claro:#DFF2BF ;
 
 $Color-Verde-Success: $Color-Verde-Super-Claro;
 
-$Color-Verde-Success-Text: #4F8A10;
+$Color-Verde-Success-Text: $Color-Verde-Mas-Claro; 
 
 $Color-Linkg-Google: #1a0dab;
 
 $Color-Link-MercadoLibre: #809;
 
 $Color-Azul-Texto: #06C;
+
+$Color-Links-Hover: #5171B8;
 
 $Color-Azul-Texto-Mercadolibre-Preguntas: #60A0BC;
 
@@ -232,92 +245,4 @@ $Color-Errors-BG: #FCB6B6;
 
 $Color-Rosado-Active-Cancelar-Bg:#FDB6BF ;
 
-/* /////////////Links, Titulos, Descripciones///////////////// */
 
-$Color-Links:$Color-Link-MercadoLibre ;
-$Color-Links-Hover: #2C1AFA;
-$Color-Titulos-Articulos: black;
-$Color-H1-Productos: black;
-$Color-H2-Productos-Descripcion: black;
-
-$Color-Home-Categorias-Random-Titulo: black;
-$Color-Home-Categorias-Random-Keyworld:black ;
-
-
-/*color para el contador de caracteres*/
-$Color-Contador-Caracteres: #D8F9D6;
-
-
-/*color para el head de los iconos*/
-
-$Color-Head-Font:#E3E3E3 ;
-
-/*color para el head de los back-groun iconos*/
-
-$Color-Head-Font-BackGround:#08298A ;
-
-  /* icono categoria back-groun */
-  $color-icono-categoria-background:$Color-AmarilloPatitp	;
-
-
-
-/* Super Categorias Menu Mobil */
-$color-borde-supercategor:#E7E7E7;
-
-
-
-/* Categorias Menu Mobil */
-$Color-background-active-li:$Color-Head-Font ;
-
-$Color-borde-active-li: $Color-Head-Font;
-
-$color-fondo-menu_mobil-Categorias:#EFF5FB ;
-
-
-
-
-
-
-/*ADMIN ADMIN FORMULARIOS/////////////////////////////////////////////////////*/
-
-/* El color del fondo de las etiquetas p en los FORMULARIOS
-son los titulos de la seccion */
-$Color-background-titulos: #247AC1;
-
-/* Es el color de fondo del contenedor del modulo del formulario */
-$Color-background-div_modules: #F3F3F3;
-
-/* color ver claritop de la parte de seo ejemplo */
-$Color-background-seo-ejemplo: #9DFBBC;
-
-$Color-Para-Bordes-Admin:$Color-Head-Font ;
-
-
-
-/* Colores en Articulo de Home ///////////////////////////////////////////////*/
-$Color-Carrito-Articulo: $Color-Gris-Plata ;
-$Color-unidades_vendidas: $Color-Verde-Google;
-$Color-Border-Bootom: $Color-Gris-Claro;
-
-
-/* color en categorias random de home */
-
-$Color-background-Categorias-Random:$Color-AmarilloPatitp ;
-
-
-
-
-/* carrito colores pagina */
-
-$Color-background-Carrito-Pag: $Color-Gris-Claro;
-
-$Color-Elminiar-Item: $Color-Gris-Plata ;
-
-$Color-Actualizar-Item: $Color-Gris-Plata ;
-
-$Color-Moneda-Precio: #777777 ;
-
-
-/* carrito colores desplegado */
-
-$Color-background-Carrito-desplegado: $Color-Gris-CasiBlanco;

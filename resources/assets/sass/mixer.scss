@@ -1,7 +1,6 @@
 ////ESTILO (colores y botones precargados para evitar errores de referencias del sass) dddd
 @import "resources/assets/sass/Estilo/colors";
-@import "resources/assets/sass/Estilo/botones";
-@import "resources/assets/sass/Estilo/text"; 
+
 
 
 
@@ -9,9 +8,10 @@
 @import "resources/assets/sass/Plugins/Plug-flex";
 //@import "resources/assets/sass/Plugins/fonts";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-//@import "resources/assets/sass/Plugins/recet";
+/* @import "resources/assets/sass/Plugins/recet"; */
+@import "resources/assets/sass/Plugins/mediCueris";
 //@import "resources/assets/sass/Plugins/scroll";
-@import "resources/assets/sass/Plugins/animate";
+/* @import "resources/assets/sass/Plugins/animate"; */
 
 
 //@import "resources/assets/sass/Plugins/Plug-progresbar";
@@ -27,7 +27,6 @@
 @import "resources/assets/sass/Plugins/Plug-ratingsPlug";
 @import "resources/assets/sass/Plugins/Plug-VentanasModals";
 @import "resources/assets/sass/Plugins/Plug-EasyAutoComplete";
-@import "resources/assets/sass/Plugins/Plug-EasyAutoComplete";
 @import "resources/assets/sass/Plugins/Plug-textAreas";
 @import "resources/assets/sass/Plugins/Plug-bxSlider";
 @import "resources/assets/sass/Plugins/fonts-socicon.scss";
@@ -38,7 +37,8 @@
 @import "resources/assets/sass/Plugins/Plug-Bootstrap-select";
 
 
-
+//Auth
+@import "resources/assets/sass/Estilo/Auth/auth";
 //Errores
 @import "resources/assets/sass/Estilo/Errores/Errores";
 @import "resources/assets/sass/Estilo/Errores/404";
@@ -55,11 +55,13 @@
 @import "resources/assets/sass/Estilo/Layout_Admin/formularios/formulario_estilos";
 @import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/home";
 
-////ESTILO
-@import "resources/assets/sass/Estilo/colors";
+//estilos
 @import "resources/assets/sass/Estilo/estructura";
 @import "resources/assets/sass/Estilo/botones";
 @import "resources/assets/sass/Estilo/text";
+
+
+
 
 
 

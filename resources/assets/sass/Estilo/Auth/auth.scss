@@ -1,0 +1,347 @@
+.contenedor-general-auth{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  padding: 2px;
+  width:100%;  
+  background-color:$color-grey0; 
+
+}
+
+.contenedor-Auth{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  padding: 2px;
+  width:95%;
+  margin: 15px auto;
+  background-color:white;
+  border-radius:4px;
+}
+
+ .auth-logo-img{
+  padding: 12px;
+  border-radius: 4px;
+  width:100%;
+  
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  margin-bottom:10px;
+ }
+
+  .auth-img{
+    height: 12px;
+  }
+
+  .auth-slogan{
+    display: none;
+  }
+  
+
+  
+
+  .Form-Auth{
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        padding: 5px;
+        width:100%;
+        margin-top: 4px;
+        border: solid 1px transparent;
+  }
+
+    .Titulo-Auth{
+      margin: 30px 0 30px 0;
+      padding:6px;
+      
+      font-size: 22px;
+      color:$color-3dark ;
+      width: black;
+      text-align: center;      
+      }
+
+   
+   
+
+    .contiene-labels-en-los-auth-tipo-flechita {
+      margin-top: 18px;
+      position: relative;
+      background: $Color-Gris-CasiBlanco;
+      border: 1px solid $Color-Gris-Claro;
+      padding:8px;
+      border-radius:4px;
+      margin-bottom: 10px;
+      width: 80%;
+    }
+    .contiene-labels-en-los-auth-tipo-flechita:after, .contiene-labels-en-los-auth-tipo-flechita:before {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .contiene-labels-en-los-auth-tipo-flechita:after {
+      border-color: rgba(136, 183, 213, 0);
+      border-bottom-color: $Color-Gris-CasiBlanco;
+      border-width: 15px;
+      margin-left: -15px;
+    }
+    .contiene-labels-en-los-auth-tipo-flechita:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-bottom-color: $Color-Gris-Claro;
+      border-width: 16px;
+      margin-left: -16px;
+    }
+
+        .Auth-Field-Contenedor{
+          
+          width:100%;
+        }
+
+        .Auth-Field-Contenedor-Separador{
+          @include flexbox;
+          @include align-items(center);
+          @include flex-direction(row);
+          @include justify-content(space-between);
+          width: 100%;
+        }
+
+          .Auth-Field-Contenedor-Label{
+            
+            padding:2px;
+            font-size: 10px;
+            color:black;
+            font-weight: bold;
+          }
+          .Auth-Field-Contenedor-Label-OlvidastesPass{
+            font-size: 12px;
+          }
+         
+
+          .Auth-Field-Contenedor-Label-Span{
+            color: $Color-texto-gris-Mercadolibre;
+            font-size: 10px;
+          }
+             .Field-Label-Sapn{
+
+              color: $color-3;
+             }
+
+          .Auth-Field-Contenedor-Label-Input{
+            border-radius: 4px;
+            background-color: $Color-Gris-CasiBlanco;
+            border-color:transparent;
+            height: 50px;
+            width: 100%;                       
+            font-size: 14px;
+            padding: 4px 10px;
+
+          }
+
+          .Auth-Field-Contenedor-Label-Input::placeholder{
+            color: $Color-Gris-Claro-Para-Bordes;
+          }
+          .Auth-Field-Contenedor-Label-Input:focus{
+            border-color:$Color-Gris-Claro-Para-Bordes;
+          }
+          
+
+           .Auth-Field-Contenedor-CheckBox{
+            font-weight: normal;
+            
+           }
+
+           .boton-inicio_sesion{
+               padding: 10px 18px;
+               background-color: $color-3dark;
+               border-radius: 4px;
+               border: solid 2px transparent;
+               color:$color-3;
+               
+               font-size: 16px;               
+               margin-top: 15px;
+               margin-bottom: 10px;
+               text-align: center;
+           }
+           .boton-inicio_sesion:hover{
+              background-color: $color-3superlight;
+           }
+
+           .contenedor-aunNoCuenta{
+            @include flexbox;
+            @include align-items(center);
+            @include flex-direction(column);
+            padding:2px;
+            margin: 4px 0 0 0;
+           }
+
+
+/* parte de partial en home */
+
+  .contiene-partial-auth-home{   
+   @include flexbox;
+   @include align-items(center);
+   @include flex-direction(column);
+   padding: 12px 7px;
+   width:100%;  
+   position:relative;  
+   background-color: white;
+   margin-top: 5px;
+  }
+
+
+.contienes-text-partial-auth-home{
+  font-size: 12px;
+  padding:2px;
+  margin:3px 0;
+  color: $Color-texto-gris-Mercadolibre;
+  text-align: center;
+}
+ .form-fiel-home-partial{
+  font-size: 16px;
+  width: 28%;
+  padding: 10px 8px;
+  border-radius:4px;
+  border:solid 1px $Color-Gris-Claro;
+ }
+
+ .boton-partial-auth-home{
+  font-size: 16px;
+  text-align: center;  
+  padding: 15px 20px;
+  border-radius:4px;
+  background-color:$color-3;
+  color:white;
+  border: solid 1px $Color-Gris-Claro;
+  
+ }
+ .boton-partial-auth-home:hover{
+  background-color: $color-3superlight;  
+
+ }
+
+
+ .boton-cerrar-auth-partial{
+   padding:6px;
+   font-size: 20px;  
+   color: #807E7E ;
+   cursor: pointer;
+   border-radius:4px;
+   border: solid 1px transparent;
+   position:absolute;
+   top: 0px;
+   right: 2px;
+ }
+
+@media (min-width: $BrackPoint-Primario){
+.contenedor-Auth{
+   width:75%;
+   margin: 20px auto;
+   
+  }
+  
+
+   .Auth-Field-Contenedor-Label-Input{
+    border-radius: 4px;    
+    height: 40px;
+    width: 100%;    
+    font-size: 17px;
+    
+    }
+
+}
+
+
+
+@media (min-width: $BrackPoint-Secundario){
+  .contenedor-Auth{
+   width:55%; 
+  }
+
+  .contiene-partial-auth-home{   
+   @include flexbox;
+   @include align-items(center);
+   @include flex-direction(column);
+   padding: 12px 7px;
+   width:100%;  
+   position:relative;  
+  }
+
+  .Form-Auth-partial{
+   @include flexbox;
+   @include align-items(center);
+   @include flex-direction(row);
+   @include justify-content(space-around);
+   background-color:$Color-Gris-Claro;
+   padding: 12px 5px;
+   width:100%;
+   margin-top: 4px;
+   
+}
+
+  .auth-img{
+    height: 18px;
+    margin-top:3px;
+  }
+
+  .auth-slogan{
+    color:white;
+    
+    padding:3px;
+    margin-top:3px;
+    font-size:12px;
+    text-align: center;
+    display: block;
+
+  }
+   .Form-Auth{
+        padding: 20px;
+                
+    }
+   
+  
+}
+
+@media (min-width: $BrackPoint-Tercer){
+  .contenedor-Auth{
+   width:42%;
+   margin-top: 30px;
+   
+   
+  }
+  .auth-img{
+    height: 20px;
+  }
+  
+  .Titulo-Auth{
+      font-size: 26px;
+    }
+    .Auth-Field-Contenedor-Label-OlvidastesPass{
+              font-size: 14px;
+    }
+    .Auth-Field-Contenedor-Label-Input{
+      height: 50px;
+      }
+  
+}
+
+@media (min-width: $BrackPoint-Cuarto){
+  .contenedor-Auth{
+   width:30%;
+
+  }
+  
+  .Titulo-Auth{
+      font-size: 28px;
+    }
+
+  .Auth-Field-Contenedor-Label-Input{
+    height: 48px;
+    font-size: 20px;
+    }
+}
