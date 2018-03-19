@@ -21,7 +21,7 @@
           
 
          
-            {!! Form::open( ['route'   => $Ruta,
+            {!! Form::open( ['route'   => $Route,
                             'method'   => 'Post',
                             'files'    => true,
                             'class'    => 'Form-Auth',
