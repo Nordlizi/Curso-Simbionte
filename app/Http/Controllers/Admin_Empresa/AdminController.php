@@ -13,6 +13,6 @@ class AdminController extends Controller
   {
     /*return view('admin.home.home');*/
     //puse este comando debido a que no creamos una home para admin
-    return redirect()->route('get_admin_eventos') ;
+    return redirect()->route('get_admin_home') ;
   }
 }
