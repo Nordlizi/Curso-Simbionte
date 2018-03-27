@@ -26,21 +26,21 @@
                                     'id'    => 'form-admin-empresa-datos'
                                   ])               !!}
            <div class="formulario-contenedor">
-              {{-- datos corporativos --}}
-              {{-- <div class="contenedor-grupo-datos">
+               {{-- datos corporativos --}}
+              <div class="contenedor-grupo-datos">
                 <div class="contenedor-grupo-datos-titulo"> Identidad</div>
                 <div class="contenedor-formulario-label-fiel">                       
                   @include('admin.empresa.formularios_partes.datos_basicos')
                 </div>
-              </div> --}}
+              </div>
               {{-- imagenes corporativos --}}
-              {{-- <div class="contenedor-grupo-datos">
+              <div class="contenedor-grupo-datos">
                 <div class="contenedor-grupo-datos-titulo"> Imagen Corporativa</div>
                 <div class="contenedor-formulario-label-fiel">                       
                   @include('admin.empresa.formularios_partes.datos_imagenes')
                 </div>
-              </div> --}}
-              {{-- datos de contacto --}}
+              </div>
+              {{-- datos de contacto --}} --}}
               <div class="contenedor-grupo-datos">
                 <div class="contenedor-grupo-datos-titulo"> Contacto</div>
                 <div class="contenedor-formulario-label-fiel">                       
@@ -48,9 +48,8 @@
                 </div>
               </div>      
            </div>
-           <div class="admin-boton-editar">
-             Editar
-           </div>
+           <input type="button" value="Editar" class="btn-primary">
+           
           {!! Form::close() !!}
    </div>
   
