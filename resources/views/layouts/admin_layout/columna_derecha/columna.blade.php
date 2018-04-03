@@ -1,7 +1,7 @@
 <div class="admin-columna-contenedor">
 
  {{-- imagen logo --}}
- <a href="{{route('get_home')}}"><img class="admin-header-logo" src="{{url()}}/imagenes/Empresa/isologo.png"></a>
+ <a href="{{route('get_home')}}"><img class="admin-header-logo" src="{{url()}}/imagenes/{{$Empresa->logo_horizontal}}"></a>
 
  <ul>
    @if(Auth::user()->role === 'adminMcos522')
@@ -26,7 +26,7 @@
 
     <div id="admin-col-backtoweb">
         <a href="{{route('get_home')}}">
-            <p><small>globaltarget.com.uy</small></p>
+            <p><small>simbiontecreativo.com</small></p>
         </a>
     </div>
 

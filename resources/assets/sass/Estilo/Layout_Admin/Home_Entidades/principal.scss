@@ -83,7 +83,7 @@
   @include flexbox;
   @include align-items(center);
   @include flex-direction(column); 
-  background-color: $color-2;
+  background-color: $color-white;
   min-height: 100vh;
   position: fixed;
 }
@@ -94,7 +94,7 @@
         background-color:$Color-Azul-Wm;
         font-size: 18px;
         color: white;
-        border-radius: 5px;
+        border-radius: 5px; 
       }
 
 // logo o isologo de la marca
