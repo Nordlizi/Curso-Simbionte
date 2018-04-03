@@ -48,7 +48,10 @@
                 </div>
               </div>      
            </div>
-           <input type="submit" value="Editar" class="btn-primary">
+           <div class="get_width_100 Helper-OrdenarHijos-columna">
+             <input type="submit" value="Editar" class="btn-primary">
+           </div>
+           
            
           {!! Form::close() !!}
    </div>
