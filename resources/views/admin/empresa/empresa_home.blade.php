@@ -40,7 +40,7 @@
                   @include('admin.empresa.formularios_partes.datos_imagenes')
                 </div>
               </div>
-              {{-- datos de contacto --}} --}}
+              {{-- datos de contacto --}} 
               <div class="contenedor-grupo-datos">
                 <div class="contenedor-grupo-datos-titulo"> Contacto</div>
                 <div class="contenedor-formulario-label-fiel">                       
@@ -48,7 +48,7 @@
                 </div>
               </div>      
            </div>
-           <input type="button" value="Editar" class="btn-primary">
+           <input type="submit" value="Editar" class="btn-primary">
            
           {!! Form::close() !!}
    </div>
